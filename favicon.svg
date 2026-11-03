@@ -1,37 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><clipPath id="r"><rect width="1024" height="1024" rx="230"/></clipPath><g clip-path="url(#r)">
-    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3f8f55"/><stop offset="1" stop-color="#235a37"/></linearGradient></defs>
-         <rect width="1024" height="1024" fill="url(#g)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><clipPath id="r"><rect width="1024" height="1024" rx="230"/></clipPath><g clip-path="url(#r)"><defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3f8f55"/><stop offset="1" stop-color="#235a37"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#fff3b8" stop-opacity="0.85"/><stop offset="0.5" stop-color="#ffe58a" stop-opacity="0.28"/><stop offset="1" stop-color="#ffe58a" stop-opacity="0"/></radialGradient>
+  <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6cf"/><stop offset="1" stop-color="#ffe9a3"/></linearGradient>
+  <linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="640" y1="340" x2="330" y2="900"><stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/><stop offset="0.45" stop-color="#fffbe0" stop-opacity="0.5"/><stop offset="1" stop-color="#ffe58a" stop-opacity="0.22"/></linearGradient>
+</defs>
+    <rect width="1024" height="1024" fill="url(#g)"/>
     <g transform="translate(512 512) scale(1) translate(-512 -512)">
-      
-    <defs><radialGradient id="glow"><stop offset="0" stop-color="#fff3b8" stop-opacity="0.75"/><stop offset="0.45" stop-color="#ffe58a" stop-opacity="0.28"/><stop offset="1" stop-color="#ffe58a" stop-opacity="0"/></radialGradient></defs>
-    <circle cx="800" cy="245" r="300" fill="url(#glow)"/>
-    <circle cx="800" cy="245" r="105" fill="#ffd966"/>
-      <g transform="translate(0 -30)">
-        <ellipse cx="512" cy="912" rx="190" ry="22" fill="#000000" fill-opacity="0.18"/>
-        
-    <g transform="translate(512 660) rotate(-62)">
-    <path d="M0 0 C 80 -72.5 72 -217.5 0 -290 C -72 -217.5 -80 -72.5 0 0 Z" fill="#7cc47f"/>
-    <path d="M0 -10 L0 -261" stroke="#ffffff" stroke-opacity="0.35" stroke-width="7" stroke-linecap="round"/>
-  </g>
-<g transform="translate(512 660) rotate(62)">
-    <path d="M0 0 C 80 -72.5 72 -217.5 0 -290 C -72 -217.5 -80 -72.5 0 0 Z" fill="#8ccf86"/>
-    <path d="M0 -10 L0 -261" stroke="#ffffff" stroke-opacity="0.35" stroke-width="7" stroke-linecap="round"/>
-  </g>
-<g transform="translate(512 660) rotate(-32)">
-    <path d="M0 0 C 90 -90 81 -270 0 -360 C -81 -270 -90 -90 0 0 Z" fill="#9ad68f"/>
-    <path d="M0 -10 L0 -324" stroke="#ffffff" stroke-opacity="0.35" stroke-width="7" stroke-linecap="round"/>
-  </g>
-<g transform="translate(512 660) rotate(32)">
-    <path d="M0 0 C 90 -90 81 -270 0 -360 C -81 -270 -90 -90 0 0 Z" fill="#aee29d"/>
-    <path d="M0 -10 L0 -324" stroke="#ffffff" stroke-opacity="0.35" stroke-width="7" stroke-linecap="round"/>
-  </g>
-<g transform="translate(512 660) rotate(0)">
-    <path d="M0 0 C 95 -100 85.5 -300 0 -400 C -85.5 -300 -95 -100 0 0 Z" fill="#cdeeb5"/>
-    <path d="M0 -10 L0 -360" stroke="#ffffff" stroke-opacity="0.35" stroke-width="7" stroke-linecap="round"/>
-  </g>
-    <rect x="344" y="640" width="336" height="66" rx="20" fill="#e2a377"/>
-    <path d="M370 700 L654 700 L612 884 Q608 900 592 900 L432 900 Q416 900 412 884 Z" fill="#c17a54"/>
-    <path d="M370 700 L654 700 L650 720 L374 720 Z" fill="#000000" fill-opacity="0.12"/>
+      <clipPath id="glass"><path d="M278 724V412A234 234 0 0 1 746 412V724Z"/></clipPath>
+      <clipPath id="sill"><rect x="190" y="744" width="644" height="60" rx="22"/></clipPath>
+      <rect x="0" y="842" width="1024" height="182" fill="#173f27" fill-opacity="0.5"/>
+      <polygon points="140,850 505,850 410,926 40,926" fill="#ffe58a" fill-opacity="0.42"/>
+      <path d="M240 764V412A272 272 0 0 1 784 412V764Z" fill="#f6f2e8"/>
+      <path d="M278 724V412A234 234 0 0 1 746 412V724Z" fill="url(#warm)"/>
+      <g clip-path="url(#glass)">
+        <circle cx="628" cy="318" r="250" fill="url(#glow)"/>
+        <circle cx="628" cy="318" r="84" fill="#ffd966"/>
+        <path d="M512 150V724M278 470H746" stroke="#f6f2e8" stroke-width="24"/>
       </g>
+      <polygon points="606,326 652,336 505,850 140,850" fill="url(#beam)"/>
+      <g clip-path="url(#glass)"><circle cx="628" cy="318" r="84" fill="#ffd966"/></g>
+      <rect x="190" y="744" width="644" height="60" rx="22" fill="#e9e1d1"/>
+      <g clip-path="url(#sill)"><polygon points="606,326 652,336 505,850 140,850" fill="#fff0a8" fill-opacity="0.55"/></g>
+      <rect x="190" y="792" width="644" height="14" rx="7" fill="#000" fill-opacity="0.16"/>
+      <g transform="translate(452 746) scale(0.92)">
+    <ellipse cx="0" cy="6" rx="130" ry="14" fill="#000" fill-opacity="0.18"/>
+    <path d="M-100 -150 L100 -150 L75 -12 Q73 0 60 0 L-60 0 Q-73 0 -75 -12 Z" fill="#c17a54"/>
+    <rect x="-114" y="-186" width="228" height="40" rx="13" fill="#e2a377"/>
+    <g transform="translate(0 -176)">
+      <g transform="rotate(-70)"><path d="M0 0 C54 -63 48.6 -157.5 0 -210 C-48.6 -157.5 -54 -63 0 0 Z" fill="#1f5a37"/><path d="M0 -10 L0 -172.2" stroke="#fff" stroke-opacity="0.3" stroke-width="7" stroke-linecap="round"/></g>
+      <g transform="rotate(70)"><path d="M0 0 C54 -63 48.6 -157.5 0 -210 C-48.6 -157.5 -54 -63 0 0 Z" fill="#55a866"/><path d="M0 -10 L0 -172.2" stroke="#fff" stroke-opacity="0.3" stroke-width="7" stroke-linecap="round"/></g>
+      <g transform="rotate(-36)"><path d="M0 0 C64 -85.5 57.6 -213.75 0 -285 C-57.6 -213.75 -64 -85.5 0 0 Z" fill="#2a6a40"/><path d="M0 -10 L0 -233.7" stroke="#fff" stroke-opacity="0.3" stroke-width="7" stroke-linecap="round"/></g>
+      <g transform="rotate(36)"><path d="M0 0 C64 -85.5 57.6 -213.75 0 -285 C-57.6 -213.75 -64 -85.5 0 0 Z" fill="#4a9d5e"/><path d="M0 -10 L0 -233.7" stroke="#fff" stroke-opacity="0.3" stroke-width="7" stroke-linecap="round"/></g>
+      <g transform="rotate(0)"><path d="M0 0 C72 -102 64.8 -255 0 -340 C-64.8 -255 -72 -102 0 0 Z" fill="#5fb06e"/><path d="M0 -10 L0 -278.8" stroke="#fff" stroke-opacity="0.3" stroke-width="7" stroke-linecap="round"/></g>
     </g>
-  </g></svg>
+  </g></g></g></svg>
