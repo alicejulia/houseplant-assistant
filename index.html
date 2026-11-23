@@ -3,125 +3,221 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>House Plant Assistant Support</title>
-  <meta name="description" content="Help and contact information for House Plant Assistant, the app that matches houseplants to the light in your windows.">
+  <title>House Plant Assistant | Match your houseplants to the light in your home</title>
+  <meta name="description" content="Map the windows in your home, see how the light changes through the seasons, and find the right spot for every houseplant, even when you're standing in the nursery. For iPhone.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="House Plant Assistant">
+  <meta property="og:description" content="Know which plant belongs where. Match your houseplants to the light in your windows, through the seasons.">
+  <meta property="og:url" content="https://houseplant.alicejwilliam.com/">
+  <meta property="og:image" content="https://houseplant.alicejwilliam.com/social.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home.css">
 </head>
-<body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="./"><img src="favicon.svg" alt="">House Plant Assistant</a>
-      <nav>
-        <a href="./" aria-current="page">Support</a>
-        <a href="privacy/">Privacy</a>
+<body class="home">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="hero">
+    <div class="hwrap">
+      <nav class="hnav" aria-label="Main">
+        <a class="hbrand" href="./"><img src="favicon.svg" alt="" width="36" height="36"><span>House Plant Assistant</span></a>
+        <div class="hlinks">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a class="keep" href="#download">Download</a>
+          <a class="keep" href="support/">Support</a>
+        </div>
       </nav>
+
+      <div class="hero-grid">
+        <div>
+          <p class="pill">For houseplant collectors</p>
+          <h1>Know which plant belongs where.</h1>
+          <p class="sub">Map the windows in your home, see how the light changes through the seasons, and find the right spot for every plant, even when you're standing in the nursery.</p>
+          <div class="cta">
+            <span class="btn btn-sun btn-static">Coming soon to the App Store</span>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <p class="fine">For iPhone. No account, no ads, and everything stays on your phone.</p>
+        </div>
+
+        <div class="hero-phones">
+          <figure class="phone">
+            <img src="screenshots/plants.webp" width="600" height="1298" alt="The My Plants gallery: a grid of photos of houseplants, each with the window it lives at.">
+          </figure>
+          <figure class="phone">
+            <img src="screenshots/window-detail.webp" width="600" height="1298" alt="A window's page showing the light in each season and a list of plants that suit the spot.">
+          </figure>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="wrap">
-    <h1>House Plant Assistant Support</h1>
-    <p class="lead">Know which plant belongs where. House Plant Assistant matches houseplants to the light in your windows, through the seasons.</p>
+  <main id="main">
+    <section class="section" id="how">
+      <div class="hwrap">
+        <p class="eyebrow">How it works</p>
+        <h2>Light is the difference between a thriving plant and a struggling one.</h2>
+        <p class="intro">House Plant Assistant works out how much light each spot in your home really gets, then matches plants to it. Three steps and you're set.</p>
 
-    <div class="card contact">
-      <p><strong>Need a hand, found a bug, or want a plant added?</strong><br>Email us and we will get back to you, usually within two days.</p>
-      <a class="button" href="mailto:support@alicejwilliam.com?subject=House%20Plant%20Assistant%20support">Email support</a>
-    </div>
-
-    <h2>Frequently asked questions</h2>
-
-    <details>
-      <summary>How does the app estimate the light at my window?</summary>
-      <div class="answer">
-        <p>It combines four things: which way the window faces, how blocked the view is (trees, buildings, awnings), your approximate latitude, and the time of year. From those it works out how much direct sun and daylight reach the spot, then reduces that for each step you move back from the glass.</p>
-        <p>The result is an estimate in four levels: Direct Sun, Bright Indirect, Medium and Low light.</p>
+        <ol class="steps">
+          <li class="step">
+            <span class="num">1</span>
+            <h3>Map your windows</h3>
+            <p>Add each window and say which way it faces. Choose a direction yourself, or lay your phone on the sill and let the compass do it. Snap a photo so you remember the spot.</p>
+          </li>
+          <li class="step">
+            <span class="num">2</span>
+            <h3>See the light through the year</h3>
+            <p>Using your latitude and the time of year, the app shows how bright each spot is in winter, spring, summer and autumn, and how that changes as you move back from the window.</p>
+          </li>
+          <li class="step">
+            <span class="num">3</span>
+            <h3>Match plants to spots</h3>
+            <p>Get plants that suit each window and how far back to sit them, with a heads-up when direct sun could scorch the leaves of a sensitive plant.</p>
+          </li>
+        </ol>
       </div>
-    </details>
+    </section>
 
-    <details>
-      <summary>Why does the app ask for my location?</summary>
-      <div class="answer">
-        <p>For two optional things. The compass button reads your phone's heading to detect which way a window faces. The Auto hemisphere setting reads your approximate latitude, because the sun's path through the year depends on where you live.</p>
-        <p>Only the latitude is kept, and only on your phone. Nothing is sent to us or anyone else.</p>
+    <section class="section alt" id="features">
+      <div class="hwrap row">
+        <div class="copy">
+          <p class="eyebrow">Your windows</p>
+          <h2>Every window in your home, mapped.</h2>
+          <p>Build a picture of the natural light in your home, one window at a time.</p>
+          <ul class="ticks">
+            <li>Pick a direction, or use your phone's compass at the window</li>
+            <li>Say how clear the view is: open sky, a sheer curtain, or a big tree outside</li>
+            <li>Add photos of the sill or space, so you can picture it later</li>
+          </ul>
+        </div>
+        <div class="shots pair">
+          <figure class="phone"><img src="screenshots/windows.webp" width="600" height="1298" loading="lazy" alt="The Windows tab listing three windows with photos and the direction each faces."></figure>
+          <figure class="phone"><img src="screenshots/add-window.webp" width="600" height="1298" loading="lazy" alt="The Add Window screen with two ways to set a direction: pick it yourself, or use the compass."></figure>
+        </div>
       </div>
-    </details>
+    </section>
 
-    <details>
-      <summary>What if I say no to location access?</summary>
-      <div class="answer">
-        <p>The app still works. Pick Northern or Southern on the home screen, and tap a direction yourself when you add a window. Without your latitude the app uses a typical mid-latitude estimate, so seasonal results will be a little less precise.</p>
+    <section class="section">
+      <div class="hwrap row reverse">
+        <div class="copy">
+          <p class="eyebrow">Light through the seasons</p>
+          <h2>The sun moves. Your plants' light does too.</h2>
+          <p>A south window that bakes a cactus in winter can be gentle in summer. The app follows the sun so your suggestions do too.</p>
+          <ul class="ticks">
+            <li>See winter, spring, summer and autumn side by side</li>
+            <li>Choose how far from the window the plant will sit</li>
+            <li>Works in both hemispheres, set automatically from your location</li>
+            <li>Gets a warning when direct sun could scorch a sensitive plant</li>
+          </ul>
+        </div>
+        <div class="shots">
+          <figure class="phone"><img src="screenshots/window-detail.webp" width="600" height="1298" loading="lazy" alt="A window's page with the four seasons, the estimated light, and the best-fit plants."></figure>
+        </div>
       </div>
-    </details>
+    </section>
 
-    <details>
-      <summary>Does it work in the Southern Hemisphere?</summary>
-      <div class="answer">
-        <p>Yes. Auto detects your hemisphere from your location, and you can set it by hand. The seasons are flipped automatically, so a south-facing window in the Northern Hemisphere and a north-facing window in the Southern Hemisphere behave alike.</p>
+    <section class="section alt">
+      <div class="hwrap row">
+        <div class="copy">
+          <p class="eyebrow">Your collection</p>
+          <h2>A gallery for the plants you love.</h2>
+          <p>Keep a photo of every plant, note where it sits, and see at a glance whether it's getting the light it likes.</p>
+          <ul class="ticks">
+            <li>A photo gallery of your whole collection</li>
+            <li>A quick verdict for each plant: great fit, will cope, too bright or too dim</li>
+            <li>One tap to move a plant to a better spot</li>
+            <li>Show off mode: swipe full-screen through your plants for a friend or family member</li>
+          </ul>
+        </div>
+        <div class="shots pair">
+          <figure class="phone"><img src="screenshots/plants.webp" width="600" height="1298" loading="lazy" alt="The My Plants gallery with a Show off button."></figure>
+          <figure class="phone"><img src="screenshots/show-off.webp" width="600" height="1298" loading="lazy" alt="Show off mode: one plant full-screen with its name, type, the window it lives at and a care tip."></figure>
+        </div>
       </div>
-    </details>
+    </section>
 
-    <details>
-      <summary>Why doesn't the app measure light with my iPhone's sensor?</summary>
-      <div class="answer">
-        <p>Apple does not give apps access to the iPhone's ambient light sensor, so the app cannot read real light levels on iOS. It relies on the window direction, obstruction, latitude and season instead.</p>
+    <section class="section">
+      <div class="hwrap row reverse">
+        <div class="copy">
+          <p class="eyebrow">At the nursery</p>
+          <h2>Know where it will go before you buy it.</h2>
+          <p>Standing in front of a plant you can't resist? Find out which of your windows suit it, and how far back to sit it.</p>
+          <ul class="ticks">
+            <li>Search the built-in plant guide, or pick the light level printed on the plant's tag, so it works for any plant</li>
+            <li>See your windows ranked, with how the plant will cope through the year</li>
+            <li>Looking for a plant for a bare sill? Pick the spot and see what fits, hiding the plants you already own</li>
+          </ul>
+        </div>
+        <div class="shots">
+          <figure class="phone"><img src="screenshots/nursery.webp" width="600" height="1298" loading="lazy" alt="The Nursery tab ranking three windows as homes for a Calathea, with advice on distance."></figure>
+        </div>
       </div>
-    </details>
+    </section>
 
-    <details>
-      <summary>How accurate are the suggestions?</summary>
-      <div class="answer">
-        <p>They are a good starting point, not a guarantee. The model assumes clear skies and uses mid-season sun angles. Weather, nearby buildings, window tinting and curtains all change real light. Watch how your plants respond, since leaves that stretch or pale suggest too little light, and scorched or bleached patches suggest too much.</p>
+    <section class="section alt" aria-labelledby="private-heading">
+      <div class="hwrap">
+        <p class="eyebrow">Private by design</p>
+        <h2 id="private-heading">Your home stays yours.</h2>
+        <p class="intro">Everything you add, including photos, lives on your phone. There's nothing to sign up for and nothing to share.</p>
+        <ul class="facts">
+          <li class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/><path d="M3 3l18 18"/></svg>
+            <strong>No account</strong><span>Open it and start. No sign-up, ever.</span>
+          </li>
+          <li class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            <strong>No ads or tracking</strong><span>No analytics and no one watching.</span>
+          </li>
+          <li class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            <strong>Stays on your phone</strong><span>Your windows, plants and photos are never uploaded.</span>
+          </li>
+          <li class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.2" r="1"/><path d="M3 3l18 18"/></svg>
+            <strong>Needs no internet</strong><span>It works in the nursery, even with a weak signal.</span>
+          </li>
+        </ul>
       </div>
-    </details>
+    </section>
 
-    <details>
-      <summary>What does the "Heads up" note on some plants mean?</summary>
-      <div class="answer">
-        <p>It appears when direct sunbeams are likely to reach that spot in the chosen season and the plant's leaves burn easily. Moving the plant back a little or filtering the light with a sheer curtain usually solves it.</p>
+    <section class="section" id="download">
+      <div class="hwrap">
+        <div class="download">
+          <img src="app-icon.png" width="96" height="96" alt="House Plant Assistant app icon: a plant on a windowsill in a sunbeam.">
+          <h2>Get House Plant Assistant</h2>
+          <p>The app is coming soon to the App Store for iPhone.</p>
+          <!--
+            WHEN THE APP IS LIVE: replace the <span> below with this link.
+            Check the link opens the right page first.
+            <a class="btn btn-sun" href="https://apps.apple.com/app/id6827354655">Download on the App Store</a>
+          -->
+          <span class="btn btn-sun btn-static">Coming soon to the App Store</span>
+        </div>
       </div>
-    </details>
+    </section>
 
-    <details>
-      <summary>Are my photos uploaded anywhere?</summary>
-      <div class="answer">
-        <p>No. Photos of your windows and plants are shrunk and kept in the app's private storage on your phone. They are not uploaded, shared or analysed. The camera is only used when you tap "Take a photo", and the app only sees the pictures you choose from your library.</p>
+    <section class="section alt" aria-labelledby="help-heading">
+      <div class="hwrap help">
+        <div>
+          <h2 id="help-heading">Questions or ideas?</h2>
+          <p>Read the answers to common questions, or get in touch. A plant you'd like added is always welcome.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-green" href="support/">Support and FAQ</a>
+          <a class="btn btn-outline" href="mailto:support@alicejwilliam.com?subject=House%20Plant%20Assistant">Email us</a>
+        </div>
       </div>
-    </details>
-
-    <details>
-      <summary>Can the app identify a plant from a photo?</summary>
-      <div class="answer">
-        <p>No. Your photos are there for you to look at, for example when you're at the nursery. To check a plant, search the plant guide, or if it isn't listed, pick the light level printed on its tag (such as "bright, indirect light") and the app will show which of your windows suit it.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Are my windows, plants and photos backed up or synced between devices?</summary>
-      <div class="answer">
-        <p>Not by us. Everything is stored only on the phone you added it on, and there is no sync between devices. Your phone's own backup (for example iCloud Backup) may include the app's data, and that is controlled by you and Apple. If you delete the app without a backup, the data is gone, and a new phone starts empty.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>How do I delete my data?</summary>
-      <div class="answer">
-        <p>Open a photo and tap Delete photo, open a window and tap Delete Window, or open a plant and tap Remove Plant. Deleting a window or plant also deletes its photos. To remove everything, including your saved latitude, delete the app. We hold no copy of your data, so there is nothing to request from us.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary>Can I suggest a plant or a feature?</summary>
-      <div class="answer">
-        <p>Please do. Email <a href="mailto:support@alicejwilliam.com?subject=House%20Plant%20Assistant%20suggestion">support@alicejwilliam.com</a> with what you would like to see.</p>
-      </div>
-    </details>
+    </section>
   </main>
 
-  <footer class="site">
-    <div class="wrap">
-      &copy; 2026 Alice J. William &middot; <a href="privacy/">Privacy Policy</a> &middot; <a href="mailto:support@alicejwilliam.com">Contact</a>
+  <footer class="hfoot">
+    <div class="hwrap">
+      &copy; 2026 Alice J. William &middot; <a href="support/">Support</a> &middot; <a href="privacy/">Privacy Policy</a> &middot; <a href="mailto:support@alicejwilliam.com">Contact</a>
     </div>
   </footer>
 </body>

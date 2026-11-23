@@ -210,3 +210,25 @@ footer.site a {
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/* Phones: keep the name on one line and give the links their own row. */
+.brand {
+  white-space: nowrap;
+}
+
+nav a {
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  header.site .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav a,
+  nav a:first-child {
+    margin: 0 18px 0 0;
+  }
+}
