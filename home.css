@@ -114,6 +114,12 @@ html {
   white-space: nowrap;
 }
 
+/* style.css turns every link inside a nav dark green on hover, which is the same colour as this bar. */
+.hbrand:hover {
+  color: #fff;
+  opacity: 0.88;
+}
+
 .hbrand img {
   width: 36px;
   height: 36px;
