@@ -47,6 +47,10 @@ body {
 }
 
 header.site {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg);
   padding: 20px 0;
   border-bottom: 1px solid var(--border);
 }
@@ -158,6 +162,10 @@ summary {
   font-weight: 600;
   padding: 14px 18px;
   list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
 }
 
 summary::-webkit-details-marker {
@@ -166,7 +174,7 @@ summary::-webkit-details-marker {
 
 summary::after {
   content: "+";
-  float: right;
+  flex-shrink: 0;
   color: var(--green);
   font-weight: 700;
 }
@@ -221,10 +229,15 @@ nav a {
 }
 
 @media (max-width: 560px) {
+  /* The bar stays on screen while scrolling, so keep it compact on phones. */
+  header.site {
+    padding: 10px 0;
+  }
+
   header.site .wrap {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 6px;
   }
 
   nav a,

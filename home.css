@@ -51,6 +51,36 @@ body.home {
   left: 12px;
 }
 
+/* ---------- Sticky top bar ---------- */
+
+/* Anchor links (#how, #features...) scroll to just below the bar, not behind it. */
+html {
+  scroll-padding-top: 76px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  color: #fff;
+  background: rgba(35, 90, 55, 0.94);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .topbar {
+    background: rgba(35, 90, 55, 0.93);
+    -webkit-backdrop-filter: blur(12px) saturate(1.2);
+    backdrop-filter: blur(12px) saturate(1.2);
+  }
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
@@ -68,7 +98,7 @@ body.home {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 22px 0;
+  padding: 14px 0;
 }
 
 .hbrand {
@@ -112,7 +142,7 @@ body.home {
   grid-template-columns: 1.05fr 1fr;
   align-items: center;
   gap: 24px;
-  padding-top: 28px;
+  padding-top: 40px;
 }
 
 .pill {
